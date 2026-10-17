@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data Science Lab Experiments – Download lab programs with built-in Python interpreter for hands-on learning.">
+  <title>Experiments – Data Science Digital Library</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👾</text></svg>">
+</head>
+
+<body>
+
+  <!-- Christmas Lights -->
+  <div class="christmas-lights">
+    <div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div>
+    <div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div>
+  </div>
+
+  <!-- Page Load Overlay -->
+  <div id="page-load-overlay" class="page-load-overlay">
+    <span class="wand-icon">👾✨</span>
+  </div>
+
+  <!-- Background -->
+  <div id="magical-bg"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="brand">
+      <img src="images/college-logo.png" alt="College Logo" class="nav-logo">
+      Digital Library
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="modules.html">Modules</a></li>
+      <li><a href="experiments.html" class="active">Experiments</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <a href="about.html" class="nav-profile-pic" title="About Me">
+      <img src="" alt="Profile" id="nav-profile-img" style="display:none;">
+      <span id="nav-profile-emoji">👤</span>
+    </a>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>🧪 Lab Experiments</h1>
+    <p>"In the Upside Down, every experiment reveals a new dimension."</p>
+    <div class="divider"><span>💡</span></div>
+  </section>
+
+  <!-- Experiments Content -->
+  <div class="experiments-container">
+
+    <!-- Stats Bar -->
+    <div class="experiments-stats reveal">
+      <div class="stat-item">
+        <span class="stat-number">10</span>
+        <span class="stat-label">Programs</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">5</span>
+        <span class="stat-label">Modules</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">Python</span>
+        <span class="stat-label">Language</span>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 1 ===== -->
+    <div class="exp-card reveal" id="exp-1">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">1</div>
+          <div class="exp-card-title">DataScience_Program1 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DataScience_Program1.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DataScience_Program1.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here...
+print('Hello from the Upside Down!')" spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 2 ===== -->
+    <div class="exp-card reveal" id="exp-2">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">2</div>
+          <div class="exp-card-title">DataScience_Program2 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DataScience_Program2.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DataScience_Program2.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 3 ===== -->
+    <div class="exp-card reveal" id="exp-3">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">3</div>
+          <div class="exp-card-title">DataScience_Program3 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DataScience_Program3.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DataScience_Program3.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 4 ===== -->
+    <div class="exp-card reveal" id="exp-4">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">4</div>
+          <div class="exp-card-title">DS_program4 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DS_program4.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DS_program4.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 5 ===== -->
+    <div class="exp-card reveal" id="exp-5">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">5</div>
+          <div class="exp-card-title">DS_program5 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DS_program5.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DS_program5.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 6 ===== -->
+    <div class="exp-card reveal" id="exp-6">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">6</div>
+          <div class="exp-card-title">DS_program6 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DS_program6.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DS_program6.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 7 ===== -->
+    <div class="exp-card reveal" id="exp-7">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">7</div>
+          <div class="exp-card-title">DS_Program7 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DS_Program7.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DS_Program7.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 8 ===== -->
+    <div class="exp-card reveal" id="exp-8">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">8</div>
+          <div class="exp-card-title">DS_Program8 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DS_Program8.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DS_Program8.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 9 ===== -->
+    <div class="exp-card reveal" id="exp-9">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">9</div>
+          <div class="exp-card-title">DS_Program9 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DS_Program9.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DS_Program9.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+    <!-- ===== EXPERIMENT 10 ===== -->
+    <div class="exp-card reveal" id="exp-10">
+      <div class="exp-card-header">
+        <div class="exp-card-title-area">
+          <div class="exp-number">10</div>
+          <div class="exp-card-title">DS_Program10 <span class="exp-file-badge">DOCX</span></div>
+        </div>
+        <div class="exp-btn-group">
+          <a href="pdfs/DS_Program10.docx" class="exp-view-btn" target="_blank">👁 View</a>
+          <a href="pdfs/DS_Program10.docx" class="exp-download-btn" download>⬇ Download</a>
+        </div>
+      </div>
+      <div class="interpreter-section">
+        <div class="interpreter-header">
+          <div class="interpreter-title">🐍 Python Interpreter</div>
+          <div class="interpreter-actions">
+            <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+            <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+          </div>
+        </div>
+        <textarea class="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+        <div class="output-area"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== Code Runner Section ===== -->
+  <div class="code-runner-section">
+    <div class="code-runner-card reveal">
+      <h2>🖥️ Quick Code Runner</h2>
+      <div class="interpreter-header">
+        <div class="interpreter-title">🐍 Python Playground</div>
+        <div class="interpreter-actions">
+          <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+          <button class="clear-btn" onclick="clearOutput(this)">✕ Clear</button>
+        </div>
+      </div>
+      <textarea class="code-editor" placeholder="# Quick Python playground – write any code here!
+import numpy as np
+print('NumPy version:', np.__version__)" spellcheck="false" style="min-height: 200px;"></textarea>
+      <div class="output-area"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><span class="footer-name">P. Kalyan Ram</span> · Data Science – Digital Library</p>
+    <p class="footer-tagline">Crafted from the Upside Down 👾</p>
+  </footer>
+
+  <!-- Pyodide for Python execution -->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Python Interpreter
+    let pyodideInstance = null;
+    let pyodideLoading = false;
+
+    async function loadPyodide_() {
+      if (pyodideInstance) return pyodideInstance;
+      if (pyodideLoading) {
+        while (!pyodideInstance) await new Promise(r => setTimeout(r, 200));
+        return pyodideInstance;
+      }
+      pyodideLoading = true;
+      try {
+        pyodideInstance = await loadPyodide();
+        await pyodideInstance.loadPackage(['numpy', 'micropip']);
+      } catch (e) {
+        console.error('Pyodide load error:', e);
+        pyodideLoading = false;
+      }
+      return pyodideInstance;
+    }
+
+    async function runCode(btn) {
+      const section = btn.closest('.interpreter-section') || btn.closest('.code-runner-card');
+      const editor = section.querySelector('.code-editor');
+      const outputArea = section.querySelector('.output-area');
+      const code = editor.value.trim();
+
+      if (!code) return;
+
+      outputArea.classList.add('has-output');
+      outputArea.innerHTML = '<span class="output-label">Output</span><span style="color: var(--st-amber);">⏳ Loading Python runtime...</span>';
+      btn.disabled = true;
+
+      try {
+        const pyodide = await loadPyodide_();
+        pyodide.runPython(`
+import sys, io
+sys.stdout = io.StringIO()
+sys.stderr = io.StringIO()
+`);
+        try {
+          pyodide.runPython(code);
+          const stdout = pyodide.runPython('sys.stdout.getvalue()');
+          const stderr = pyodide.runPython('sys.stderr.getvalue()');
+          let result = '';
+          if (stdout) result += `<span class="success">${escapeHtml(stdout)}</span>`;
+          if (stderr) result += `<span class="error">${escapeHtml(stderr)}</span>`;
+          if (!result) result = '<span style="color: var(--st-text-dim);">✓ Executed successfully (no output)</span>';
+          outputArea.innerHTML = `<span class="output-label">Output</span>${result}`;
+        } catch (e) {
+          outputArea.innerHTML = `<span class="output-label">Output</span><span class="error">${escapeHtml(e.message)}</span>`;
+        }
+      } catch (e) {
+        outputArea.innerHTML = `<span class="output-label">Output</span><span class="error">Failed to load Python: ${escapeHtml(e.message)}</span>`;
+      }
+
+      btn.disabled = false;
+    }
+
+    function clearOutput(btn) {
+      const section = btn.closest('.interpreter-section') || btn.closest('.code-runner-card');
+      const outputArea = section.querySelector('.output-area');
+      outputArea.classList.remove('has-output');
+      outputArea.innerHTML = '';
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data Science Tools – Comprehensive guide to programming languages, libraries, environments, visualization, big data, databases, and cloud/MLOps tools.">
+  <title>Tools – Data Science Digital Library</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👾</text></svg>">
+</head>
+
+<body>
+
+  <!-- Christmas Lights -->
+  <div class="christmas-lights">
+    <div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div>
+    <div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div>
+  </div>
+
+  <!-- Page Load Overlay -->
+  <div id="page-load-overlay" class="page-load-overlay">
+    <span class="wand-icon">👾✨</span>
+  </div>
+
+  <!-- Background -->
+  <div id="magical-bg"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="brand">
+      <img src="images/college-logo.png" alt="College Logo" class="nav-logo">
+      Digital Library
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="modules.html">Modules</a></li>
+      <li><a href="experiments.html">Experiments</a></li>
+      <li><a href="tools.html" class="active">Tools</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <a href="about.html" class="nav-profile-pic" title="About Me">
+      <img src="" alt="Profile" id="nav-profile-img" style="display:none;">
+      <span id="nav-profile-emoji">👤</span>
+    </a>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>🛠️ Data Science Tools</h1>
+    <p>"Every monster hunter needs the right equipment."</p>
+    <div class="divider"><span>💡</span></div>
+  </section>
+
+  <!-- Tools Section -->
+  <div class="tools-container">
+
+    <!-- Filter & Search Bar -->
+    <div class="tools-filter-bar reveal">
+      <input type="text" class="tools-search" id="tools-search" placeholder="🔍  Search tools by name, description, or role…">
+      <div class="filter-chips">
+        <button class="filter-chip active" data-role="all">All</button>
+        <button class="filter-chip" data-role="data scientist">Data Scientist</button>
+        <button class="filter-chip" data-role="data analyst">Data Analyst</button>
+        <button class="filter-chip" data-role="data engineer">Data Engineer</button>
+        <button class="filter-chip" data-role="ml engineer">ML Engineer</button>
+        <button class="filter-chip" data-role="bi analyst">BI Analyst</button>
+        <button class="filter-chip" data-role="ai researcher">AI Researcher</button>
+      </div>
+    </div>
+
+    <!-- ===== PROGRAMMING LANGUAGES ===== -->
+    <section class="tool-category reveal" id="cat-programming">
+      <h2>💻 Programming Languages</h2>
+      <div class="card-grid">
+        <div class="tool-card" data-name="Python" data-roles="data scientist, data analyst, data engineer, ml engineer, ai researcher">
+          <h3>🐍 Python</h3>
+          <p class="tool-desc">General-purpose language dominant in data science. Used for data analysis, machine learning, deep learning, automation, web scraping, and scripting.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-analyst">Data Analyst</span>
+            <span class="role-tag data-engineer">Data Engineer</span>
+            <span class="role-tag ml-engineer">ML Engineer</span>
+            <span class="role-tag ai-researcher">AI Researcher</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="R" data-roles="data scientist, data analyst, ai researcher">
+          <h3>📊 R</h3>
+          <p class="tool-desc">Statistical programming language designed for data analysis, statistical computing, and data visualization. Strong in academia and research.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-analyst">Data Analyst</span>
+            <span class="role-tag ai-researcher">AI Researcher</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="SQL" data-roles="data scientist, data analyst, data engineer, bi analyst">
+          <h3>🗄️ SQL</h3>
+          <p class="tool-desc">Structured Query Language for managing and querying relational databases. Essential for data extraction, transformation, and reporting.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-analyst">Data Analyst</span>
+            <span class="role-tag data-engineer">Data Engineer</span>
+            <span class="role-tag bi-analyst">BI Analyst</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Julia" data-roles="data scientist, ai researcher">
+          <h3>⚡ Julia</h3>
+          <p class="tool-desc">High-performance language for numerical analysis and computational science. Gaining popularity in ML research.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag ai-researcher">AI Researcher</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LIBRARIES & FRAMEWORKS ===== -->
+    <section class="tool-category reveal" id="cat-libraries">
+      <h2>📚 Libraries & Frameworks</h2>
+      <div class="card-grid">
+        <div class="tool-card" data-name="NumPy" data-roles="data scientist, ml engineer, ai researcher">
+          <h3>🔢 NumPy</h3>
+          <p class="tool-desc">Fundamental package for scientific computing with Python. Provides support for arrays, matrices, and mathematical operations.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag ml-engineer">ML Engineer</span>
+            <span class="role-tag ai-researcher">AI Researcher</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Pandas" data-roles="data scientist, data analyst, data engineer">
+          <h3>🐼 Pandas</h3>
+          <p class="tool-desc">Data manipulation and analysis library. Provides DataFrames for efficient data handling, cleaning, and exploration.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-analyst">Data Analyst</span>
+            <span class="role-tag data-engineer">Data Engineer</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Scikit-learn" data-roles="data scientist, ml engineer">
+          <h3>🤖 Scikit-learn</h3>
+          <p class="tool-desc">Machine learning library with simple and efficient tools for classification, regression, clustering, and model selection.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag ml-engineer">ML Engineer</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="TensorFlow" data-roles="ml engineer, ai researcher">
+          <h3>🧠 TensorFlow</h3>
+          <p class="tool-desc">Open-source deep learning framework by Google. Used for neural networks, computer vision, NLP, and production-grade ML.</p>
+          <div class="tool-roles">
+            <span class="role-tag ml-engineer">ML Engineer</span>
+            <span class="role-tag ai-researcher">AI Researcher</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="PyTorch" data-roles="ml engineer, ai researcher">
+          <h3>🔥 PyTorch</h3>
+          <p class="tool-desc">Deep learning framework by Meta. Popular in research for dynamic computation graphs and intuitive model building.</p>
+          <div class="tool-roles">
+            <span class="role-tag ml-engineer">ML Engineer</span>
+            <span class="role-tag ai-researcher">AI Researcher</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VISUALIZATION ===== -->
+    <section class="tool-category reveal" id="cat-visualization">
+      <h2>📈 Visualization</h2>
+      <div class="card-grid">
+        <div class="tool-card" data-name="Matplotlib" data-roles="data scientist, data analyst">
+          <h3>📉 Matplotlib</h3>
+          <p class="tool-desc">Comprehensive library for creating static, animated, and interactive visualizations in Python.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-analyst">Data Analyst</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Seaborn" data-roles="data scientist, data analyst">
+          <h3>🎨 Seaborn</h3>
+          <p class="tool-desc">Statistical data visualization built on Matplotlib. Provides beautiful default styles and high-level interfaces.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-analyst">Data Analyst</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Plotly" data-roles="data scientist, data analyst, bi analyst">
+          <h3>✨ Plotly</h3>
+          <p class="tool-desc">Interactive graphing library for creating publication-quality dashboards and charts.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-analyst">Data Analyst</span>
+            <span class="role-tag bi-analyst">BI Analyst</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Power BI" data-roles="data analyst, bi analyst">
+          <h3>📊 Power BI</h3>
+          <p class="tool-desc">Microsoft's business analytics tool for interactive dashboards and business intelligence reports.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-analyst">Data Analyst</span>
+            <span class="role-tag bi-analyst">BI Analyst</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Tableau" data-roles="data analyst, bi analyst">
+          <h3>📋 Tableau</h3>
+          <p class="tool-desc">Leading data visualization platform for creating interactive dashboards without coding.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-analyst">Data Analyst</span>
+            <span class="role-tag bi-analyst">BI Analyst</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ENVIRONMENTS ===== -->
+    <section class="tool-category reveal" id="cat-environments">
+      <h2>🖥️ Development Environments</h2>
+      <div class="card-grid">
+        <div class="tool-card" data-name="Jupyter" data-roles="data scientist, data analyst, ml engineer, ai researcher">
+          <h3>📓 Jupyter Notebook</h3>
+          <p class="tool-desc">Interactive web-based computing environment for creating documents with live code, equations, and visualizations.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-analyst">Data Analyst</span>
+            <span class="role-tag ml-engineer">ML Engineer</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Google Colab" data-roles="data scientist, ml engineer, ai researcher">
+          <h3>☁️ Google Colab</h3>
+          <p class="tool-desc">Free cloud-based Jupyter environment with GPU access. Perfect for ML experiments and collaboration.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag ml-engineer">ML Engineer</span>
+            <span class="role-tag ai-researcher">AI Researcher</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="VS Code" data-roles="data scientist, data engineer, ml engineer">
+          <h3>💎 VS Code</h3>
+          <p class="tool-desc">Lightweight, extensible code editor with rich support for Python, notebooks, debugging, and version control.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-engineer">Data Engineer</span>
+            <span class="role-tag ml-engineer">ML Engineer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BIG DATA & DATABASES ===== -->
+    <section class="tool-category reveal" id="cat-bigdata">
+      <h2>🗃️ Big Data & Databases</h2>
+      <div class="card-grid">
+        <div class="tool-card" data-name="Apache Spark" data-roles="data engineer, data scientist">
+          <h3>⚡ Apache Spark</h3>
+          <p class="tool-desc">Unified analytics engine for large-scale data processing. Supports batch and stream processing.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-engineer">Data Engineer</span>
+            <span class="role-tag data-scientist">Data Scientist</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="MongoDB" data-roles="data engineer">
+          <h3>🍃 MongoDB</h3>
+          <p class="tool-desc">Popular NoSQL document database for flexible, scalable data storage with JSON-like documents.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-engineer">Data Engineer</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="PostgreSQL" data-roles="data engineer, data analyst">
+          <h3>🐘 PostgreSQL</h3>
+          <p class="tool-desc">Advanced open-source relational database known for reliability, feature robustness, and performance.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-engineer">Data Engineer</span>
+            <span class="role-tag data-analyst">Data Analyst</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CLOUD & MLOPS ===== -->
+    <section class="tool-category reveal" id="cat-cloud">
+      <h2>☁️ Cloud & MLOps</h2>
+      <div class="card-grid">
+        <div class="tool-card" data-name="AWS" data-roles="data engineer, ml engineer">
+          <h3>🌐 AWS</h3>
+          <p class="tool-desc">Amazon's cloud platform with services like S3, SageMaker, Redshift, and Lambda for end-to-end data pipelines.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-engineer">Data Engineer</span>
+            <span class="role-tag ml-engineer">ML Engineer</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Docker" data-roles="data engineer, ml engineer">
+          <h3>🐳 Docker</h3>
+          <p class="tool-desc">Containerization platform for packaging applications with dependencies. Essential for reproducible ML workflows.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-engineer">Data Engineer</span>
+            <span class="role-tag ml-engineer">ML Engineer</span>
+          </div>
+        </div>
+        <div class="tool-card" data-name="Git" data-roles="data scientist, data engineer, ml engineer">
+          <h3>📂 Git / GitHub</h3>
+          <p class="tool-desc">Version control system for tracking code changes and collaborating on projects. Industry standard for all developers.</p>
+          <div class="tool-roles">
+            <span class="role-tag data-scientist">Data Scientist</span>
+            <span class="role-tag data-engineer">Data Engineer</span>
+            <span class="role-tag ml-engineer">ML Engineer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><span class="footer-name">P. Kalyan Ram</span> · Data Science – Digital Library</p>
+    <p class="footer-tagline">Crafted from the Upside Down 👾</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

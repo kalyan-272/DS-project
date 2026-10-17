@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Me – Student profile for P. Kalyan Ram, Data Science Digital Library project.">
+  <title>About Me – Data Science Digital Library</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👾</text></svg>">
+</head>
+
+<body>
+
+  <!-- Christmas Lights -->
+  <div class="christmas-lights">
+    <div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div>
+    <div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div>
+  </div>
+
+  <!-- Page Load Overlay -->
+  <div id="page-load-overlay" class="page-load-overlay">
+    <span class="wand-icon">👾✨</span>
+  </div>
+
+  <!-- Background -->
+  <div id="magical-bg"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="brand">
+      <img src="images/college-logo.png" alt="College Logo" class="nav-logo">
+      Digital Library
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="modules.html">Modules</a></li>
+      <li><a href="experiments.html">Experiments</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <a href="about.html" class="nav-profile-pic" title="About Me">
+      <img src="" alt="Profile" id="nav-profile-img" style="display:none;">
+      <span id="nav-profile-emoji">👤</span>
+    </a>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>👤 About Me</h1>
+    <p>"Every character in this story has a role to play."</p>
+    <div class="divider"><span>💡</span></div>
+  </section>
+
+  <!-- About Content -->
+  <div class="about-container">
+
+    <!-- Hero Card -->
+    <div class="about-hero reveal">
+      <div class="about-photo-large profile-photo-img">👤</div>
+      <div class="about-intro">
+        <h1 class="detail-value">P. Kalyan Ram</h1>
+        <p class="about-title">B.Tech Computer Science · Data Science Enthusiast</p>
+        <p class="about-bio">
+          A passionate and curious student exploring the fascinating world of Data Science.
+          I love turning raw data into meaningful insights and building intelligent systems.
+          Currently pursuing my degree with a focus on machine learning, data visualization,
+          and statistical analysis. Always eager to learn, experiment, and discover new dimensions.
+        </p>
+        <!-- Hidden file input for photo upload -->
+        <input type="file" id="photo-input" accept="image/*" style="display:none;">
+        <button class="edit-photo-btn" id="edit-photo-btn"
+                style="position:relative; display:inline-flex; margin-top:1rem; width:auto; border-radius:8px; padding:0.4rem 1rem; gap:6px; font-size:0.85rem;">
+          ✏️ Change Photo
+        </button>
+      </div>
+    </div>
+
+    <!-- Student Details -->
+    <div class="about-section reveal">
+      <h2>📋 Student Details</h2>
+      <ul>
+        <li><strong>Name:</strong> P. Kalyan Ram</li>
+        <li><strong>Roll Number:</strong> 24102A030101</li>
+        <li><strong>Section:</strong> 2</li>
+        <li><strong>Subject:</strong> Data Science</li>
+        <li><strong>Professor:</strong> S. Bosubabu</li>
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <div class="about-section reveal">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>B.Tech in Computer Science & Engineering</strong> – Currently Pursuing</li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="about-section reveal">
+      <h2>🛠️ Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">R</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Seaborn</span>
+        <span class="skill-tag">Jupyter</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Tableau</span>
+        <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">AWS</span>
+        <span class="skill-tag">HTML / CSS / JS</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Deep Learning</span>
+        <span class="skill-tag">NLP</span>
+        <span class="skill-tag">Data Visualization</span>
+        <span class="skill-tag">Statistical Analysis</span>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="about-section reveal">
+      <h2>🚀 Projects</h2>
+      <ul>
+        <li><strong>Data Science Digital Library</strong> – This very project! A comprehensive, Stranger Things themed web portal for data science learning materials, experiments, tools, and resources.</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="about-section reveal">
+      <h2>📬 Contact</h2>
+      <ul>
+        <li><strong>GitHub:</strong> <a href="#" style="color: var(--st-red);">github.com/kalyanram</a></li>
+        <li><strong>Email:</strong> <a href="mailto:kalyanram@example.com" style="color: var(--st-red);">kalyanram@example.com</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><span class="footer-name">P. Kalyan Ram</span> · Data Science – Digital Library</p>
+    <p class="footer-tagline">Crafted from the Upside Down 👾</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Data Science Digital Library – A Stranger Things themed college mini project showcasing modules, experiments, and data science tools.">
+  <title>Data Science – Digital Library</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👾</text></svg>">
+</head>
+
+<body>
+
+  <!-- ========== CHRISTMAS LIGHTS ========== -->
+  <div class="christmas-lights">
+    <div class="christmas-light"></div>
+    <div class="christmas-light"></div>
+    <div class="christmas-light"></div>
+    <div class="christmas-light"></div>
+    <div class="christmas-light"></div>
+    <div class="christmas-light"></div>
+    <div class="christmas-light"></div>
+    <div class="christmas-light"></div>
+  </div>
+
+  <!-- ========== PAGE LOAD OVERLAY ========== -->
+  <div id="page-load-overlay" class="page-load-overlay">
+    <span class="wand-icon">👾✨</span>
+  </div>
+
+  <!-- ========== STRANGER THINGS BACKGROUND ========== -->
+  <div id="magical-bg"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="brand">
+      <img src="images/college-logo.png" alt="College Logo" class="nav-logo">
+      Digital Library
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="modules.html">Modules</a></li>
+      <li><a href="experiments.html">Experiments</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <a href="about.html" class="nav-profile-pic" title="About Me">
+      <img src="" alt="Profile" id="nav-profile-img" style="display:none;">
+      <span id="nav-profile-emoji">👤</span>
+    </a>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <!-- Stranger Things Inspired Shield SVG -->
+    <div class="hero-shield">
+      <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#e40712;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#8b0000;stop-opacity:1" />
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <!-- Shield shape -->
+        <path d="M50 5 L90 25 L90 65 Q90 95 50 115 Q10 95 10 65 L10 25 Z" fill="none" stroke="url(#shieldGrad)"
+          stroke-width="3" filter="url(#glow)" />
+        <path d="M50 15 L80 30 L80 62 Q80 88 50 105 Q20 88 20 62 L20 30 Z" fill="rgba(228,7,18,0.15)" stroke="none" />
+        <!-- Cross lines -->
+        <line x1="50" y1="25" x2="50" y2="100" stroke="#e40712" stroke-width="1" opacity="0.4" />
+        <line x1="25" y1="55" x2="75" y2="55" stroke="#e40712" stroke-width="1" opacity="0.4" />
+        <!-- Bulb in center -->
+        <text x="50" y="62" text-anchor="middle" font-size="22" fill="#e40712" filter="url(#glow)">💡</text>
+      </svg>
+    </div>
+    <h1>Data Science</h1>
+    <p class="subtitle">Subject: Digital Library</p>
+    <p class="tagline">~ "Friends don't lie… but data does sometimes" ~</p>
+    <div class="divider"><span>💡</span></div>
+  </section>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main-content">
+    <!-- LEFT AREA -->
+    <div class="left-area">
+
+      <!-- ---- MODULES SECTION ---- -->
+      <section class="reveal">
+        <div class="section-heading">
+          <h2>📚 Modules</h2>
+          <a href="modules.html" class="view-more-btn">View More ➜</a>
+        </div>
+        <div class="card-grid">
+          <!-- Module 1 -->
+          <a href="modules.html#module-1" class="card fade-in-up" id="home-mod-1">
+            <span class="card-num">1</span>
+            <span class="card-icon">📖</span>
+            <span class="card-label">Introduction to Data Science</span>
+          </a>
+          <!-- Module 2 -->
+          <a href="modules.html#module-2" class="card fade-in-up" id="home-mod-2">
+            <span class="card-num">2</span>
+            <span class="card-icon">🔍</span>
+            <span class="card-label">Data Extraction & Preprocessing</span>
+          </a>
+          <!-- Module 3 -->
+          <a href="modules.html#module-3" class="card fade-in-up" id="home-mod-3">
+            <span class="card-num">3</span>
+            <span class="card-icon">📊</span>
+            <span class="card-label">Data Visualization</span>
+          </a>
+          <!-- Module 4 -->
+          <a href="modules.html#module-4" class="card fade-in-up" id="home-mod-4">
+            <span class="card-num">4</span>
+            <span class="card-icon">🧮</span>
+            <span class="card-label">Statistical Thinking</span>
+          </a>
+          <!-- Module 5 -->
+          <a href="modules.html#module-5" class="card fade-in-up" id="home-mod-5">
+            <span class="card-num">5</span>
+            <span class="card-icon">📈</span>
+            <span class="card-label">Time Series & Predictive Modeling</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ---- EXPERIMENTS SECTION ---- -->
+      <section class="reveal" style="margin-top: 2.5rem;">
+        <div class="section-heading">
+          <h2>🧪 Experiments</h2>
+          <a href="experiments.html" class="view-more-btn">View More ➜</a>
+        </div>
+        <div class="card-grid">
+          <a href="experiments.html#exp-1" class="card fade-in-up">
+            <span class="card-num">1</span>
+            <span class="card-icon">🔬</span>
+            <span class="card-label">Program 1</span>
+          </a>
+          <a href="experiments.html#exp-2" class="card fade-in-up">
+            <span class="card-num">2</span>
+            <span class="card-icon">🔬</span>
+            <span class="card-label">Program 2</span>
+          </a>
+          <a href="experiments.html#exp-3" class="card fade-in-up">
+            <span class="card-num">3</span>
+            <span class="card-icon">🔬</span>
+            <span class="card-label">Program 3</span>
+          </a>
+          <a href="experiments.html#exp-4" class="card fade-in-up">
+            <span class="card-num">4</span>
+            <span class="card-icon">🔬</span>
+            <span class="card-label">Program 4</span>
+          </a>
+          <a href="experiments.html#exp-5" class="card fade-in-up">
+            <span class="card-num">5</span>
+            <span class="card-icon">🔬</span>
+            <span class="card-label">Program 5</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <!-- Student Info -->
+      <div class="sidebar-card reveal">
+        <h3>👤 Student Info</h3>
+        <div class="profile-photo-container">
+          <div class="profile-photo profile-photo-img">👤</div>
+          <input type="file" id="sidebar-photo-input" accept="image/*" style="display:none;">
+        </div>
+        <div class="detail-list" style="margin-top: 1rem;">
+          <div class="detail-item">
+            <span class="detail-label">Name</span>
+            <span class="detail-value">P. Kalyan Ram</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Roll No</span>
+            <span class="detail-value">24102A030101</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Section</span>
+            <span class="detail-value">2</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Subject</span>
+            <span class="detail-value">Data Science</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Professor</span>
+            <span class="detail-value">S. Bosubabu</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="sidebar-card reveal">
+        <h3>⚡ Quick Links</h3>
+        <div class="quick-links">
+          <a href="modules.html" class="quick-link">
+            <span class="quick-link-icon">📚</span> All Modules
+          </a>
+          <a href="experiments.html" class="quick-link">
+            <span class="quick-link-icon">🧪</span> Lab Experiments
+          </a>
+          <a href="tools.html" class="quick-link">
+            <span class="quick-link-icon">🛠️</span> DS Tools
+          </a>
+          <a href="resources.html" class="quick-link">
+            <span class="quick-link-icon">📦</span> Resources
+          </a>
+          <a href="about.html" class="quick-link">
+            <span class="quick-link-icon">👤</span> About Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Quote Card -->
+      <div class="sidebar-card reveal">
+        <h3>💡 The Upside Down</h3>
+        <p style="font-style: italic; color: var(--st-text-dim); font-size: 0.9rem; line-height: 1.5;">
+          "Mornings are for coffee and contemplation… and data analysis."
+        </p>
+        <p style="text-align: right; font-size: 0.78rem; color: var(--st-red); margin-top: 0.5rem;">— Chief Hopper (adapted)</p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p><span class="footer-name">P. Kalyan Ram</span> · Data Science – Digital Library</p>
+    <p class="footer-tagline">Crafted from the Upside Down 👾</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

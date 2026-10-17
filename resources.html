@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resources – Curated learning materials, documentation, free courses, datasets, cheat sheets, and practice sites for data science.">
+  <title>Resources – Data Science Digital Library</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👾</text></svg>">
+</head>
+
+<body>
+
+  <!-- Christmas Lights -->
+  <div class="christmas-lights">
+    <div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div>
+    <div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div><div class="christmas-light"></div>
+  </div>
+
+  <!-- Page Load Overlay -->
+  <div id="page-load-overlay" class="page-load-overlay">
+    <span class="wand-icon">👾✨</span>
+  </div>
+
+  <!-- Background -->
+  <div id="magical-bg"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="brand">
+      <img src="images/college-logo.png" alt="College Logo" class="nav-logo">
+      Digital Library
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="modules.html">Modules</a></li>
+      <li><a href="experiments.html">Experiments</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="resources.html" class="active">Resources</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <a href="about.html" class="nav-profile-pic" title="About Me">
+      <img src="" alt="Profile" id="nav-profile-img" style="display:none;">
+      <span id="nav-profile-emoji">👤</span>
+    </a>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>📦 Resources</h1>
+    <p>"The gate to knowledge is always open… if you know where to look."</p>
+    <div class="divider"><span>💡</span></div>
+  </section>
+
+  <!-- Resources Content -->
+  <div class="resources-container">
+
+    <!-- ===== OFFICIAL DOCUMENTATION ===== -->
+    <section class="resource-category reveal">
+      <h2>📘 Official Documentation</h2>
+      <div class="resource-grid">
+        <a href="https://docs.python.org/3/" target="_blank" class="resource-card">
+          <span class="resource-card-icon">🐍</span>
+          <h3>Python Docs</h3>
+          <p>Official Python documentation – tutorials, library reference, and language specification.</p>
+          <span class="resource-tag tag-docs">Docs</span>
+          <span class="resource-link-hint">↗ Visit</span>
+        </a>
+        <a href="https://pandas.pydata.org/docs/" target="_blank" class="resource-card">
+          <span class="resource-card-icon">🐼</span>
+          <h3>Pandas Docs</h3>
+          <p>Comprehensive guide to data manipulation with DataFrames, Series, and I/O tools.</p>
+          <span class="resource-tag tag-docs">Docs</span>
+          <span class="resource-link-hint">↗ Visit</span>
+        </a>
+        <a href="https://scikit-learn.org/stable/documentation.html" target="_blank" class="resource-card">
+          <span class="resource-card-icon">🤖</span>
+          <h3>Scikit-learn Docs</h3>
+          <p>Machine learning library documentation with user guide, API reference, and tutorials.</p>
+          <span class="resource-tag tag-docs">Docs</span>
+          <span class="resource-link-hint">↗ Visit</span>
+        </a>
+        <a href="https://matplotlib.org/stable/contents.html" target="_blank" class="resource-card">
+          <span class="resource-card-icon">📉</span>
+          <h3>Matplotlib Docs</h3>
+          <p>Plotting library documentation with gallery, tutorials, and detailed API reference.</p>
+          <span class="resource-tag tag-docs">Docs</span>
+          <span class="resource-link-hint">↗ Visit</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FREE COURSES ===== -->
+    <section class="resource-category reveal">
+      <h2>🎓 Free Courses</h2>
+      <div class="resource-grid">
+        <a href="https://www.coursera.org/learn/machine-learning" target="_blank" class="resource-card">
+          <span class="resource-card-icon">🧠</span>
+          <h3>Machine Learning – Andrew Ng</h3>
+          <p>Stanford's legendary ML course by Andrew Ng on Coursera. The gold standard intro to machine learning.</p>
+          <span class="resource-tag tag-free">Free</span>
+          <span class="resource-link-hint">↗ Enroll</span>
+        </a>
+        <a href="https://cs50.harvard.edu/ai/" target="_blank" class="resource-card">
+          <span class="resource-card-icon">🎓</span>
+          <h3>CS50's AI with Python</h3>
+          <p>Harvard's introduction to AI using Python – search, knowledge, uncertainty, optimization, and more.</p>
+          <span class="resource-tag tag-free">Free</span>
+          <span class="resource-link-hint">↗ Enroll</span>
+        </a>
+        <a href="https://www.kaggle.com/learn" target="_blank" class="resource-card">
+          <span class="resource-card-icon">📊</span>
+          <h3>Kaggle Learn</h3>
+          <p>Hands-on micro-courses on Python, Pandas, ML, feature engineering, deep learning, and more.</p>
+          <span class="resource-tag tag-free">Free</span>
+          <span class="resource-link-hint">↗ Learn</span>
+        </a>
+        <a href="https://www.freecodecamp.org/learn/data-analysis-with-python/" target="_blank" class="resource-card">
+          <span class="resource-card-icon">💻</span>
+          <h3>freeCodeCamp – Data Analysis</h3>
+          <p>Free certification in data analysis with Python covering NumPy, Pandas, Matplotlib, and projects.</p>
+          <span class="resource-tag tag-free">Free</span>
+          <span class="resource-link-hint">↗ Start</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== DATASETS ===== -->
+    <section class="resource-category reveal">
+      <h2>🗂️ Datasets</h2>
+      <div class="resource-grid">
+        <a href="https://www.kaggle.com/datasets" target="_blank" class="resource-card">
+          <span class="resource-card-icon">📁</span>
+          <h3>Kaggle Datasets</h3>
+          <p>Thousands of free datasets across every domain – finance, health, sports, NLP, computer vision, and more.</p>
+          <span class="resource-tag tag-dataset">Dataset</span>
+          <span class="resource-link-hint">↗ Browse</span>
+        </a>
+        <a href="https://datasetsearch.research.google.com/" target="_blank" class="resource-card">
+          <span class="resource-card-icon">🔍</span>
+          <h3>Google Dataset Search</h3>
+          <p>Search engine for datasets across the web. Find open data from government, academic, and commercial sources.</p>
+          <span class="resource-tag tag-dataset">Dataset</span>
+          <span class="resource-link-hint">↗ Search</span>
+        </a>
+        <a href="https://archive.ics.uci.edu/" target="_blank" class="resource-card">
+          <span class="resource-card-icon">🏛️</span>
+          <h3>UCI ML Repository</h3>
+          <p>Classic repository of machine learning datasets used extensively in academic research and benchmarking.</p>
+          <span class="resource-tag tag-dataset">Dataset</span>
+          <span class="resource-link-hint">↗ Browse</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== CHEAT SHEETS ===== -->
+    <section class="resource-category reveal">
+      <h2>📋 Cheat Sheets</h2>
+      <div class="resource-grid">
+        <a href="https://www.datacamp.com/cheat-sheet" target="_blank" class="resource-card">
+          <span class="resource-card-icon">📝</span>
+          <h3>DataCamp Cheat Sheets</h3>
+          <p>Quick-reference guides for Python, Pandas, NumPy, Matplotlib, Scikit-learn, SQL, and more.</p>
+          <span class="resource-tag tag-cheatsheet">Cheat Sheet</span>
+          <span class="resource-link-hint">↗ View</span>
+        </a>
+        <a href="https://github.com/FavioVazquez/ds-cheatsheets" target="_blank" class="resource-card">
+          <span class="resource-card-icon">📂</span>
+          <h3>DS Cheatsheets – GitHub</h3>
+          <p>Curated collection of data science cheat sheets covering ML, stats, Python, R, and deep learning.</p>
+          <span class="resource-tag tag-cheatsheet">Cheat Sheet</span>
+          <span class="resource-link-hint">↗ View</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== PRACTICE PLATFORMS ===== -->
+    <section class="resource-category reveal">
+      <h2>🏋️ Practice Platforms</h2>
+      <div class="resource-grid">
+        <a href="https://leetcode.com/" target="_blank" class="resource-card">
+          <span class="resource-card-icon">🧩</span>
+          <h3>LeetCode</h3>
+          <p>Coding challenges and interview prep. Includes SQL, algorithms, and data structure problems.</p>
+          <span class="resource-tag tag-practice">Practice</span>
+          <span class="resource-link-hint">↗ Solve</span>
+        </a>
+        <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-statistics" target="_blank" class="resource-card">
+          <span class="resource-card-icon">📊</span>
+          <h3>HackerRank – Statistics</h3>
+          <p>10-day statistics tutorial with challenges covering mean, median, distributions, and hypothesis testing.</p>
+          <span class="resource-tag tag-practice">Practice</span>
+          <span class="resource-link-hint">↗ Start</span>
+        </a>
+        <a href="https://www.kaggle.com/competitions" target="_blank" class="resource-card">
+          <span class="resource-card-icon">🏆</span>
+          <h3>Kaggle Competitions</h3>
+          <p>Data science competitions with real-world datasets. Earn prizes and build your portfolio.</p>
+          <span class="resource-tag tag-practice">Practice</span>
+          <span class="resource-link-hint">↗ Compete</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><span class="footer-name">P. Kalyan Ram</span> · Data Science – Digital Library</p>
+    <p class="footer-tagline">Crafted from the Upside Down 👾</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
